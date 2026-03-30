@@ -1,0 +1,5 @@
+langgraph
+groq
+google-genai
+python-dotenv
+rich
