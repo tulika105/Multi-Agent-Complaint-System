@@ -9,6 +9,8 @@ Customer support teams often struggle with high volumes of trivial queries mixed
 
 The core engine is built using **LangGraph** to coordinate multiple LLM agents (powered by Groq/Llama-3 and Google Gemini) which process customer inquiries, classify complaints, assess urgency, loop in human reviewers when needed, and automate final email responses.
 
+## System Walkthrough - https://youtu.be/CYjLIDAvzF0
+
 ![System Architecture Flowchart](assets/architecture.png)
 
 ---
