@@ -17,7 +17,7 @@ def notify_customer_node(state):
     if not to_email:
         return {
             "flow": [{
-                "agent": "Notification Service",
+                "agent": "Notification Service (ZARA)",
                 "log": f"Could not send notification for complaint {complaint_id} (email missing)."
             }]
         }
@@ -74,7 +74,7 @@ def notify_customer_node(state):
     return {
         "response": f"Escalation declined. A formal notification has been sent to {to_email}.",
         "flow": [{
-            "agent": "Notification Service",
+            "agent": "Notification Service (ZARA)",
             "log": f"Notifying customer regarding complaint {complaint_id}."
         }]
     }

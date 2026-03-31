@@ -15,7 +15,7 @@ def email_tool(state):
         return {
             "response": "No email provided. Cannot send notification.",
             "flow": [{
-                "agent": "Notification Service",
+                "agent": "Notification Service (NEO)",
                 "log": f"Could not send email for complaint {complaint_id} (email missing)."
             }]
         }
@@ -29,7 +29,7 @@ def email_tool(state):
         return {
             "response": f"⚠️ Email not sent. Missing required complaint details: {', '.join(missing)}. Please re-submit with Order ID.",
             "flow": [{
-                "agent": "Notification Service",
+                "agent": "Notification Service (NEO)",
                 "log": f"Email blocked for complaint {complaint_id} due to missing {', '.join(missing)}."
             }]
         }
@@ -89,7 +89,7 @@ def email_tool(state):
     return {
         "response": f"Your complaint has been processed. Please check your email ({to_email}) for the formal response.",
         "flow": [{
-            "agent": "Notification Service",
+            "agent": "Notification Service (NEO)",
             "log": f"Sent formal response email to {to_email} for complaint {complaint_id} (Urgency: {urgency})."
         }]
     }
