@@ -50,7 +50,7 @@ The core engine is built using **LangGraph** to coordinate multiple LLM agents (
 │   ├── complaint_agent.py      # Severity & Issue Extraction
 │   ├── info_agent.py           # General Knowledge (Gemini)
 │   ├── human_node.py           # HITL Approval Logic
-│   └── notify_customer_node.py  # Escalation Decline Notifications
+│   └── notify_customer_node.py # Escalation Decline Notifications (ZARA)
 ├── tools/                      # Business Logic Fulfillment
 │   └── email_tool.py           # Dynamic Email Generator (NEO)
 ├── services/                   # External APIs & Integrations
