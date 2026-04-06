@@ -26,6 +26,10 @@ The core engine is built using **LangGraph** to coordinate multiple LLM agents (
     
     ![Email Notification Screenshot](assets/email_screenshot.png)
 *   **Persistent Session Memory**: Remembers the entire conversation history using `MemorySaver`, allowing for fluid, multi-turn interactions.
+*   **Structured Session Lifecycle**: Every session moves through three explicit phases managed in `AgentState`:
+    *   `idle` — Session is initialized but no query has been received yet.
+    *   `processing` — Agents are actively working: routing, extracting, escalating, and responding.
+    *   `completed` — The session is closed and all logs are persisted to disk.
 *   **Detailed Execution Logs**: Every decision, agent thought, and phase transition is recorded in `data/session_logs.json` for full traceability.
 
 ---
