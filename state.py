@@ -3,9 +3,19 @@ from typing import Annotated, TypedDict, Optional, List, Dict
 
 def flow_reducer(a: List[Dict], b: List[Dict]) -> List[Dict]:
     """
-    Standard reducer adds lists. 
-    However, if 'b' is empty, it acts as a RESET signal 
-    (used to start a fresh trace for a new turn in a persistent session).
+    Combines the existing history (a) with the new update (b).
+    
+    Why use this? 
+    It prevents any agent from OVERWRITING the work of the previous one.
+    
+    Example:
+    1. WITHOUT this reducer:
+       If Agent 1 writes ["A"] and Agent 2 writes ["B"], the result is only ["B"].
+    2. WITH this reducer:
+       If Agent 1 writes ["A"] and Agent 2 writes ["B"], the result is ["A", "B"].
+       
+    - If 'b' is [], it resets the state (Clears history).
+    - Otherwise, it adds 'b' to the end of 'a' (Appends update).
     """
     if b == []:
         return []
