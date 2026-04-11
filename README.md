@@ -26,6 +26,7 @@ The core engine is built using **LangGraph** to coordinate multiple LLM agents (
     
     ![Email Notification Screenshot](assets/email_screenshot.png)
 *   **Persistent Session Memory**: Remembers the entire conversation history using `MemorySaver`, allowing for fluid, multi-turn interactions.
+*   **Smart State Reducer**: Instead of letting agents overwrite each other's work, I built a custom reducer that **appends** every agent's thought process into a single, chronological audit trail. This means we never lose context on how a decision was made. It's also smart enough to wipe the slate clean if we need to restart the session from scratch.
 *   **Structured Session Lifecycle**: Every session moves through three explicit phases managed in `AgentState`:
     *   `idle` — Session is initialized but no query has been received yet.
     *   `processing` — Agents are actively working: routing, extracting, escalating, and responding.
