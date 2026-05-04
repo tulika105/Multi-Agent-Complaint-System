@@ -65,5 +65,125 @@
             "[phase_transition] processing -> completed",
             "[bot_response] Exiting... Goodbye!"
         ]
+    },
+    {
+        "session_id": 3,
+        "timestamp": "2026-05-04T17:23:37.742348",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "Order #5512 has a small scratch on the back panel. It still works fine.",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'Order #5512 has a small scratch on the back panel. It still works fine.'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: complaint",
+            "[routing_decision] Route to: complaint",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[complaint_agent] Analyzing your complaint regarding order #5512 (Urgency: LOW).",
+            "[notification_service_(neo)] Sent formal response email to abc@gmail.com for complaint CMP-470EFD (Urgency: LOW).",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Your complaint has been processed. Please check your email (abc@gmail.com) for the formal response.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
+    },
+    {
+        "session_id": 4,
+        "timestamp": "2026-05-04T17:25:17.183404",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "What is your refund policy? Also, I want to return my damaged product from Order 8810",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'What is your refund policy? Also, I want to return my damaged product from Order 8810'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: complaint",
+            "[routing_decision] Route to: complaint",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[complaint_agent] Analyzing your complaint regarding order 8810 (Urgency: HIGH).",
+            "[escalation_desk] Manual review completed: Escalation Approved.",
+            "[notification_service_(neo)] Sent formal response email to abc@gmail.com for complaint CMP-366D01 (Urgency: HIGH).",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Your complaint has been processed. Please check your email (abc@gmail.com) for the formal response.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
+    },
+    {
+        "session_id": 5,
+        "timestamp": "2026-05-04T17:50:24.870707",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "How long does Amazon India's standard delivery take to rural areas?",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'How long does Amazon India's standard delivery take to rural areas?'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: general",
+            "[routing_decision] Route to: general",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[information_agent] Providing professional assistance based on the general inquiry.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Thank you for your query regarding Amazon India's standard delivery to rural areas.\n\nStandard delivery to rural areas in India typically takes **approximately 3 to 7 business days**.\n\nPlease note that this timeframe can sometimes vary due to several factors:\n*   The **specific rural location** and its accessibility.\n*   The **product's availability** and the location of the fulfillment center.\n*   Any unforeseen **logistical challenges** or local conditions.\n\nFor the most accurate delivery estimate, we recommend checking the **estimated delivery date provided at checkout** after entering your complete delivery address.\n\nIs there anything else I can assist you with?",
+            "[user_input] User said: 'thanks'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: general",
+            "[routing_decision] Route to: general",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[information_agent] Providing professional assistance based on the general inquiry.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] You're very welcome!\n\nIs there anything else I can assist you with today?",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
+    },
+    {
+        "session_id": 6,
+        "timestamp": "2026-05-04T18:28:26.536769",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "My Amazon India order 9021 is delayed by 5 days",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'My Amazon India order 9021 is delayed by 5 days'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: complaint",
+            "[routing_decision] Route to: complaint",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[complaint_agent] Analyzing your complaint regarding order 9021 (Urgency: LOW).",
+            "[notification_service_(neo)] Sent formal response email to abc@gmail.com for complaint CMP-0E8309 (Urgency: LOW).",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Your complaint has been processed. Please check your email (abc@gmail.com) for the formal response.",
+            "[user_input] User said: 'ok'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: general",
+            "[routing_decision] Route to: general",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[information_agent] Providing professional assistance based on the general inquiry.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Thank you for confirming.\n\nIs there anything else I can assist you with today?",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
     }
 ]

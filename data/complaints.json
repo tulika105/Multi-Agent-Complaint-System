@@ -14,5 +14,21 @@
         "order_id": "7752",
         "urgency": "MEDIUM",
         "user_email": "abc@gmail.com"
+    },
+    {
+        "timestamp": "2026-05-04T17:22:35.746556",
+        "complaint_id": "CMP-470EFD",
+        "issue": "Small scratch on the back panel",
+        "order_id": "#5512",
+        "urgency": "LOW",
+        "user_email": "abc@gmail.com"
+    },
+    {
+        "timestamp": "2026-05-04T18:27:56.211547",
+        "complaint_id": "CMP-0E8309",
+        "issue": "Order delayed by 5 days",
+        "order_id": "9021",
+        "urgency": "LOW",
+        "user_email": "abc@gmail.com"
     }
 ]
