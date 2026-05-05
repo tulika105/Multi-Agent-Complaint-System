@@ -185,5 +185,141 @@
             "[phase_transition] processing -> completed",
             "[bot_response] Exiting... Goodbye!"
         ]
+    },
+    {
+        "session_id": 7,
+        "timestamp": "2026-05-05T23:42:15.740867",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "Does Flipkart SuperCoins expire if I don't use them?",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'Does Flipkart SuperCoins expire if I don't use them?'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: general",
+            "[routing_decision] Route to: general",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[information_agent] Providing professional assistance based on the general inquiry.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Yes, **Flipkart SuperCoins** do expire if they are not used.\n\nHere's how their expiration typically works:\n\n*   **Expiration Period:** SuperCoins generally expire at the end of **12 months** from the month they were earned.\n    *   For example, if you earned SuperCoins in June 2023, they would expire on June 30, 2024.\n*   **Usage Order:** When you redeem SuperCoins, the system usually prioritizes using the oldest coins first (those closest to their expiration date) to help you utilize them before they expire.\n*   **Checking Expiration:** You can find the exact expiration dates of your SuperCoins in the 'SuperCoin Zone' section of the Flipkart app or website.\n\nIs there anything else I can assist you with?",
+            "[user_input] User said: 'ok'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: general",
+            "[routing_decision] Route to: general",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[information_agent] Providing professional assistance based on the general inquiry.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] You're welcome! Please let me know if you have any other questions or if there's anything else I can assist you with.",
+            "[user_input] User said: 'thanks'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: general",
+            "[routing_decision] Route to: general",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[information_agent] Providing professional assistance based on the general inquiry.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] You're most welcome!\n\nIs there anything else I can assist you with?",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
+    },
+    {
+        "session_id": 8,
+        "timestamp": "2026-05-05T23:44:11.568736",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "I ordered food on Zomato (Order ZM8821) and it arrived completely cold and 45 minutes late. The restaurant had marked it as delivered on time which is a lie.",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'I ordered food on Zomato (Order ZM8821) and it arrived completely cold and 45 minutes late. The restaurant had marked it as delivered on time which is a lie.'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: complaint",
+            "[routing_decision] Route to: complaint",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[complaint_agent] Analyzing your complaint regarding order ZM8821 (Urgency: MEDIUM).",
+            "[notification_service_(neo)] Sent formal response email to abc@gmail.com for complaint CMP-54B067 (Urgency: MEDIUM).",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Your complaint has been processed. Please check your email (abc@gmail.com) for the formal response.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
+    },
+    {
+        "session_id": 9,
+        "timestamp": "2026-05-05T23:48:44.864854",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "Never ordering from Swiggy again",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'Never ordering from Swiggy again'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: complaint",
+            "[routing_decision] Route to: complaint",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[complaint_agent] Incomplete information: Order ID was missing.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] \u26a0\ufe0f Cannot process complaint. The following details are missing: Order ID. Please re-submit your complaint with all required information.",
+            "[user_input] User said: 'ID is 56788'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: general",
+            "[routing_decision] Route to: general",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[information_agent] Providing professional assistance based on the general inquiry.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Thank you for providing your Order ID: **56788**.\n\nHow can I assist you today regarding this order? Please let me know your question or concern.\n\nIs there anything else I can assist you with?",
+            "[user_input] User said: 'My order 56788 came late from swiggy never gonna order again'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: complaint",
+            "[routing_decision] Route to: complaint",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[complaint_agent] Analyzing your complaint regarding order 56788 (Urgency: LOW).",
+            "[notification_service_(neo)] Sent formal response email to abc@gmail.com for complaint CMP-338FBC (Urgency: LOW).",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Your complaint has been processed. Please check your email (abc@gmail.com) for the formal response.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
+    },
+    {
+        "session_id": 10,
+        "timestamp": "2026-05-05T23:51:19.568623",
+        "state": {
+            "current_message": "exit",
+            "initial_message": "My 6 year old daughter just swallowed a small detachable part from the toy I ordered on Flipkart (Order #FK4421). We are rushing to the hospital right now. I need someone to call me immediately with the product safety information",
+            "phase": "completed",
+            "intent": null,
+            "urgency": null,
+            "bot_response": "Exiting... Goodbye!",
+            "next_node": "completed"
+        },
+        "decision_log": [
+            "[user_input] User said: 'My 6 year old daughter just swallowed a small detachable part from the toy I ordered on Flipkart (Order #FK4421). We are rushing to the hospital right now. I need someone to call me immediately with the product safety information'",
+            "[phase_transition] idle -> processing",
+            "[intent_classification] Intent detected: complaint",
+            "[routing_decision] Route to: complaint",
+            "[customer_service_router] Categorizing your inquiry...",
+            "[complaint_agent] Analyzing your complaint regarding order FK4421 (Urgency: HIGH).",
+            "[escalation_desk] Manual review completed: Escalation Declined.",
+            "[notification_service_(zara)] Notifying customer regarding complaint CMP-4AC293.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Escalation declined. A formal notification has been sent to abc@gmail.com.",
+            "[phase_transition] processing -> completed",
+            "[bot_response] Exiting... Goodbye!"
+        ]
     }
 ]
