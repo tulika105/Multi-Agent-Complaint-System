@@ -130,6 +130,8 @@ The system was evaluated using a **component-level benchmark** on a golden test 
 | Severity Accuracy | **63%** (5/8) |
 | Error Rate | **30%** (3/10) |
  
+![Confusion Matrix(Severity)](<Screenshot 2026-05-06 133408.png>) ![Confusion Matrix(Routing)](<Screenshot 2026-05-06 133326.png>) 
+
 The supervisor agent achieved perfect routing. The main failure mode identified in the complaint agent was **systematic under-escalation** — severity was underclassified on delivery delays, fraudulent status reporting, and churn signals where explicit danger keywords were absent.
  
 > Full methodology, test cases, failure analysis → [`Evaluation/evaluation.md`](Evaluation/evaluation.md)

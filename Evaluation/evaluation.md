@@ -38,6 +38,12 @@ This document presents a benchmark evaluation of the core agent logic using a ma
 
 ---
 
+## Confusion Matrices
+
+![Confusion Matrix(Severity)](<Screenshot 2026-05-06 133408.png>) ![Confusion Matrix(Routing)](<Screenshot 2026-05-06 133326.png>)
+
+---
+
 ## Failure Details
 
 ### Case 6 — Severity FAIL
