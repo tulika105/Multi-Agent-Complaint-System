@@ -119,3 +119,17 @@ python main.py
 *   **`data/LOGS_GUIDE.md`**: A helpful guide on how to read and interpret the session logs.
 
 ---
+
+## 🧪 Evaluation
+ 
+The system was evaluated using a **component-level benchmark** on a golden test dataset of 10 manually curated inputs, scoring the two most critical classification decisions in the pipeline.
+ 
+| Metric | Score |
+|--------|-------|
+| Routing Accuracy | **100%** (10/10) |
+| Severity Accuracy | **63%** (5/8) |
+| Error Rate | **30%** (3/10) |
+ 
+The supervisor agent achieved perfect routing. The main failure mode identified in the complaint agent was **systematic under-escalation** — severity was underclassified on delivery delays, fraudulent status reporting, and churn signals where explicit danger keywords were absent.
+ 
+> Full methodology, test cases, failure analysis → [`Evaluation/evaluation.md`](Evaluation/evaluation.md)
