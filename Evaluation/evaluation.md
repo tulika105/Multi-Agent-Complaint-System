@@ -40,7 +40,10 @@ This document presents a benchmark evaluation of the core agent logic using a ma
 
 ## Confusion Matrices
 
-![Confusion Matrix(Severity)](<Screenshot 2026-05-06 133408.png>) ![Confusion Matrix(Routing)](<Screenshot 2026-05-06 133326.png>)
+<p align="center">
+  <img width="550" alt="Routing Confusion Matrix" src="https://github.com/user-attachments/assets/159c0d0d-de6a-4665-8e55-3f1d616f95a1" />
+  <img width="550" alt="Severity Confusion Matrix" src="https://github.com/user-attachments/assets/197c6330-0b0f-42fc-8c57-6e37d0c8078a" />
+</p>
 
 ---
 
